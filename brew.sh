@@ -52,7 +52,9 @@ brew install stern
 
 # Install IaC tooling
 brew install awscli
+brew install opentofu
 brew install scw # Scaleway
+brew install terragrunt
 
 # Remove outdated versions from the cellar.
 brew cleanup
