@@ -28,6 +28,7 @@ brew install --cask rocket
 # Install software
 brew install handbrake
 brew install iterm2
+brew install mackup
 brew install --cask discord
 brew install --cask firefox
 brew install --cask lastfm
