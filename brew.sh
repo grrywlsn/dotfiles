@@ -31,6 +31,7 @@ brew install --cask proton-drive
 brew install --cask proton-mail
 brew install --cask protonvpn
 brew install --cask signal
+brew install --cask skype
 brew install --cask visual-studio-code
 
 # Install Kubernetes tooling
