@@ -29,6 +29,7 @@ brew install --cask rocket
 brew install iterm2
 brew install --cask proton-drive
 brew install --cask proton-mail
+brew install --cask proton-pass
 brew install --cask protonvpn
 brew install --cask signal
 brew install --cask skype

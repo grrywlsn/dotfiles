@@ -2,4 +2,3 @@
 
 mas install 6444602274 # Ivory for Mastodon
 mas install 6446224821 # StreetPass for Mastodon
-mas install 6443490629 # Proton Pass
