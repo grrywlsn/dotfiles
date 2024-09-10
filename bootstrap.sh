@@ -13,3 +13,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 source ~/.bash_profile;
 
 ./brew.sh
+./mac-app-store.sh
