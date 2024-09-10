@@ -16,3 +16,4 @@ source ~/.bash_profile;
 
 ./brew.sh
 ./mac-app-store.sh
+./.macos
