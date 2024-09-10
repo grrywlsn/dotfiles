@@ -34,6 +34,7 @@ brew install --cask protonvpn
 brew install --cask signal
 brew install --cask skype
 brew install --cask visual-studio-code
+brew install --cask vlc
 
 # Install Kubernetes tooling
 brew install kubectl
