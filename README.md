@@ -5,7 +5,7 @@ A fork of https://github.com/mathiasbynens/dotfiles
 On a fresh Mac:
 
 ```bash
-cd; curl -#L https://github.com/grrywlsn/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,bootstrap.sh,.osx,LICENSE-MIT.txt}
+cd; curl -#L https://github.com/grrywlsn/dotfiles/tarball/main | tar -xzv --strip-components 1 --exclude={README.md,.osx,LICENSE-MIT.txt}
 ./bootstrap.sh
 ```
 
