@@ -22,6 +22,7 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+brew install --cask rocket
 
 # Install software
 brew install iterm2
@@ -37,7 +38,7 @@ brew install kubectx
 brew install helm
 brew install stern
 
-# Install IaC
+# Install IaC tooling
 brew install awscli
 brew install scw # Scaleway
 
