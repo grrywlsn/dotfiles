@@ -27,6 +27,7 @@ brew install --cask rocket
 
 # Install software
 brew install iterm2
+brew install --cask publii
 brew install --cask proton-drive
 brew install --cask proton-mail
 brew install --cask proton-pass
