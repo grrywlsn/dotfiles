@@ -22,5 +22,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #sudo scutil --set LocalHostName "0x6D746873"
 #sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
 
-# Set Trackpad 
-sudo defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+# Set Dock
+defaults write com.apple.dock autohide -bool true
+
+# Set Trackpad
+defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
