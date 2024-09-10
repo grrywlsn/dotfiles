@@ -17,4 +17,5 @@ source ~/.bash_profile;
 ./brew.sh
 ./mac-app-store.sh
 ./.macos
-mackup restore
+
+echo "Run `mackup restore` once to restore settings when iCloud has synced"
