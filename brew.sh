@@ -27,11 +27,12 @@ brew install --cask rocket
 
 # Install software
 brew install iterm2
-brew install --cask publii
+brew install --cask pgadmin4
 brew install --cask proton-drive
 brew install --cask proton-mail
 brew install --cask proton-pass
 brew install --cask protonvpn
+brew install --cask publii
 brew install --cask signal
 brew install --cask skype
 brew install --cask visual-studio-code
