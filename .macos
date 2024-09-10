@@ -27,7 +27,8 @@ defaults write com.apple.dock "autohide" -bool "true" && \
 defaults write com.apple.dock "largesize" -int "53" && \
 defaults write com.apple.dock "magnification" -bool "true" && \
 defaults write com.apple.dock "tilesize" -int "28" && \
+defaults write com.apple.dock "show-recents" -bool "false" && \
 killall Dock
 
 # Set Trackpad
-defaults write com.apple.AppleMultitouchTrackpad TrackpadCornerSecondaryClick -int 2
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
