@@ -3,6 +3,7 @@
 # Enable TouchID sudo
 sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 
+softwareupdate --install-rosetta --agree-to-license
 softwareupdate --all --install --force
 sudo xcode-select --install
 
