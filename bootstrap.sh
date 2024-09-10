@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Enable TouchID sudo
-echo "auth       sufficient     pam_tid.so" > /etc/pam.d/sudo_local
+sed -e 's/^#auth/auth/' /etc/pam.d/sudo_local.template | sudo tee /etc/pam.d/sudo_local
 
 softwareupdate --all --install --force
 sudo xcode-select --install
