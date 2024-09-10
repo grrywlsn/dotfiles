@@ -26,7 +26,9 @@ brew install woff2
 brew install --cask rocket
 
 # Install software
+brew install handbrake
 brew install iterm2
+brew install --cask lastfm
 brew install --cask netnewswire
 brew install --cask obs
 brew install --cask pgadmin4
