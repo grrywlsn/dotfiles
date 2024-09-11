@@ -28,6 +28,7 @@ itemsToRemove=(
 itemsToAdd=(
    "/System/Applications/Photos.app"
    "/Applications/NetNewsWire.app"
+   "/Applications/Instapaper.app"
    "/Applications/Safari.app"
    "/Applications/Signal.app"
    "/Applications/Ivory.app"
@@ -52,8 +53,6 @@ for additionItem in "${itemsToAdd[@]}"
       fi
   done
 
-sleep 3
-
 # Set Dock
 defaults write com.apple.dock "autohide" -bool "true" && \
 defaults write com.apple.dock "largesize" -int "53" && \
@@ -62,6 +61,14 @@ defaults write com.apple.dock "tilesize" -int "28" && \
 defaults write com.apple.dock "show-recents" -bool "false" && \
 defaults write com.apple.dock "mru-spaces" -bool "false" && \
 killall Dock
+
+# Set Finder
+defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true" && \
+killall Finder
+
+# Set Screenshots
+defaults write com.apple.screencapture "location" -string "~/Downloads" && \ 
+killall SystemUIServer
 
 # Set Trackpad
 defaults write com.apple.AppleMultitouchTrackpad "Clicking" -int "1"
