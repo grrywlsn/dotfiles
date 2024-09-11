@@ -31,4 +31,5 @@ defaults write com.apple.dock "show-recents" -bool "false" && \
 killall Dock
 
 # Set Trackpad
+defaults write com.apple.AppleMultitouchTrackpad "Clicking" -int "1"
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
