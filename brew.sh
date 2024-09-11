@@ -26,6 +26,7 @@ brew install woff2
 brew install --cask rocket
 
 # Install software
+brew install dockutil
 brew install handbrake
 brew install iterm2
 brew install mackup

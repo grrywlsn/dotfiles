@@ -13,14 +13,46 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
-# General UI/UX                                                               #
+# Set Dock app icons                                                          #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-#sudo scutil --set ComputerName "0x6D746873"
-#sudo scutil --set HostName "0x6D746873"
-#sudo scutil --set LocalHostName "0x6D746873"
-#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "0x6D746873"
+
+itemsToRemove=(
+   "Launchpad"
+   "Mail"
+   "Freeform"
+   "iPhone Mirroring"
+   "System Settings"
+)
+
+itemsToAdd=(
+   "/System/Applications/Photos.app"
+   "/Applications/NetNewsWire.app"
+   "/Applications/Safari.app"
+   "/Applications/Signal.app"
+   "/Applications/Ivory.app"
+   "/System/Applications/Music.app"
+)
+
+for removalItem in "${itemsToRemove[@]}"
+   do
+      # Check that the item is actually in the Dock
+      inDock=$(dockutil --list | grep "$removalItem")
+      if [ -n "$inDock" ]; then
+         dockutil --remove "$removalItem" --no-restart
+      fi
+   done
+
+for additionItem in "${itemsToAdd[@]}"
+  do
+      # Check that the item is not already in the Dock
+      inDock=$(dockutil --list | grep "$additionItem")
+      if [ -z "$inDock" ]; then
+         dockutil --add "$additionItem" --no-restart
+      fi
+  done
+
+sleep 3
 
 # Set Dock
 defaults write com.apple.dock "autohide" -bool "true" && \
@@ -28,9 +60,14 @@ defaults write com.apple.dock "largesize" -int "53" && \
 defaults write com.apple.dock "magnification" -bool "true" && \
 defaults write com.apple.dock "tilesize" -int "28" && \
 defaults write com.apple.dock "show-recents" -bool "false" && \
+defaults write com.apple.dock "mru-spaces" -bool "false" && \
 killall Dock
 
 # Set Trackpad
 defaults write com.apple.AppleMultitouchTrackpad "Clicking" -int "1"
+<<<<<<< HEAD
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
 /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
+=======
+defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
+>>>>>>> 7a0d08c (Set dock item)
