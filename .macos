@@ -72,9 +72,5 @@ killall SystemUIServer
 
 # Set Trackpad
 defaults write com.apple.AppleMultitouchTrackpad "Clicking" -int "1"
-<<<<<<< HEAD
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
 /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
-=======
-defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
->>>>>>> 7a0d08c (Set dock item)
