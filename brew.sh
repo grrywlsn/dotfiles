@@ -51,6 +51,7 @@ brew install kubectl
 brew install kubectx
 brew install helm
 brew install stern
+brew install k9s
 
 # Install IaC tooling
 brew install awscli
