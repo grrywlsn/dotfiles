@@ -15,6 +15,7 @@ BREW_PREFIX=$(brew --prefix)
 brew install coreutils
 brew install git
 brew install mas
+brew install watch
 brew install wget
 brew install yq
 
