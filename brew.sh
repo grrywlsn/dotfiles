@@ -17,6 +17,7 @@ brew install git
 brew install mas
 brew install watch
 brew install wget
+brew install youtube-dl
 brew install yq
 
 # Install font tools
