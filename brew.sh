@@ -14,6 +14,7 @@ BREW_PREFIX=$(brew --prefix)
 # # Install core tools/CLIs
 brew install coreutils
 brew install git
+brew install handbrake
 brew install mas
 brew install watch
 brew install wget
