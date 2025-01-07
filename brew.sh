@@ -13,6 +13,7 @@ BREW_PREFIX=$(brew --prefix)
 
 # # Install core tools/CLIs
 brew install coreutils
+brew install homeport/tap/dyff
 brew install git
 brew install mas
 brew install watch
