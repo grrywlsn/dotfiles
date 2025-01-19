@@ -18,6 +18,7 @@ brew install git
 brew install mas
 brew install watch
 brew install wget
+brew install yamllint
 brew install youtube-dl
 brew install yq
 
@@ -42,7 +43,6 @@ brew install --cask obs
 brew install --cask pgadmin4
 brew install --cask proton-drive
 brew install --cask proton-mail
-brew install --cask proton-pass
 brew install --cask protonvpn
 brew install --cask publii
 brew install --cask signal
