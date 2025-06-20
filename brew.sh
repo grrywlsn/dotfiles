@@ -14,7 +14,7 @@ BREW_PREFIX=$(brew --prefix)
 # # Install core tools/CLIs
 brew install coreutils
 brew install dive
-brew install homeport/tap/dyff
+brew install dyff
 brew install git
 brew install mas
 brew install watch
@@ -24,11 +24,7 @@ brew install youtube-dl
 brew install yq
 
 # Install font tools
-brew tap bramstein/webfonttools
-brew install sfnt2woff
-brew install sfnt2woff-zopfli
-brew install woff2
-brew install --cask rocket
+brew install fonttools
 
 # Install software
 brew install dockutil
@@ -55,6 +51,7 @@ brew install --cask vlc
 brew install kubectl
 brew install kubectx
 brew install helm
+brew install helm-docs
 brew install stern
 brew install k9s
 
