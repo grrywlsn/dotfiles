@@ -18,12 +18,19 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
 itemsToRemove=(
-   "Launchpad"
-   "Mail"
-   "Music"
+   "App Store"
+   "Contacts"
+   "FaceTime"
    "Freeform"
    "iPhone Mirroring"
+   "Launchpad"
+   "Mail"
+   "Maps"
+   "Messages"
+   "Music"
+   "News"
    "System Settings"
+   "TV"
 )
 
 itemsToAdd=(
@@ -67,7 +74,7 @@ defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true" && \
 killall Finder
 
 # Set Screenshots
-defaults write com.apple.screencapture "location" -string "~/Downloads" && \ 
+defaults write com.apple.screencapture "location" -string "~/Downloads" && \
 killall SystemUIServer
 
 # Set Trackpad
