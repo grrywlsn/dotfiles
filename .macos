@@ -71,6 +71,7 @@ killall Dock
 
 # Set Finder
 defaults write com.apple.finder "FXRemoveOldTrashItems" -bool "true" && \
+defaults write com.apple.finder FXRecentFolders -bool false && \
 killall Finder
 
 # Set Screenshots
@@ -89,3 +90,6 @@ defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" 
 # defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist ConfigDataInstall -bool TRUE
 # defaults write /Library/Preferences/com.apple.SoftwareUpdate.plist CriticalUpdateInstall -bool TRUE
 # defaults write /Library/Preferences/com.apple.commerce.plist AutoUpdate -bool TRUE
+
+# Update wallpaper across all displays
+osascript -e 'tell application "System Events" to set picture of every desktop to "~/Library/Mobile Documents/com~apple~CloudDocs/wallpaper/current.jpg"'
