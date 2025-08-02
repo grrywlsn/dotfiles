@@ -14,46 +14,42 @@ BREW_PREFIX=$(brew --prefix)
 # # Install core tools/CLIs
 brew install coreutils
 brew install dive
+brew install dockutil
 brew install dyff
+brew install fonttools
 brew install git
+brew install go
 brew install mas
 brew install watch
 brew install wget
 brew install yamllint
-brew install youtube-dl
 brew install yq
+brew install yt-dlp
 
-# Install font tools
-brew install fonttools
-
-# Install software
-brew install dockutil
-brew install handbrake
-brew install --cask handbrake
-brew install iterm2
-brew install mackup
+# casks
 brew install --cask discord
 brew install --cask firefox
-brew install --cask lastfm
+brew install --cask handbrake-app
+brew install --cask iterm2
 brew install --cask netnewswire
 brew install --cask obs
 brew install --cask pgadmin4
+brew install --cask plex
+brew install --cask plexamp
 brew install --cask proton-drive
 brew install --cask proton-mail
 brew install --cask protonvpn
-brew install --cask publii
 brew install --cask signal
-brew install --cask skype
 brew install --cask visual-studio-code
 brew install --cask vlc
 
 # Install Kubernetes tooling
-brew install kubectl
-brew install kubectx
 brew install helm
 brew install helm-docs
-brew install stern
 brew install k9s
+brew install kubectl
+brew install kubectx
+brew install stern
 
 # Install IaC tooling
 brew install awscli
@@ -62,4 +58,5 @@ brew install scw # Scaleway
 brew install terragrunt
 
 # Remove outdated versions from the cellar.
-brew cleanup
+brew cleanup --prune=all
+brew doctor
