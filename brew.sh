@@ -20,6 +20,7 @@ brew install fonttools
 brew install git
 brew install go
 brew install mas
+brew install pipx
 brew install watch
 brew install wget
 brew install yamllint
