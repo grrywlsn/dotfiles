@@ -19,6 +19,7 @@ brew install dyff
 brew install fonttools
 brew install git
 brew install go
+brew install jq
 brew install mas
 brew install pipx
 brew install watch
