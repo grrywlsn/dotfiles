@@ -18,6 +18,7 @@ brew install dockutil
 brew install dyff
 brew install fonttools
 brew install git
+brew install gitify
 brew install go
 brew install jq
 brew install mas
