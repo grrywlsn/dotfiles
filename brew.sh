@@ -23,6 +23,7 @@ brew install go
 brew install jq
 brew install mas
 brew install pipx
+brew install protonpass/tap/pass-cli
 brew install watch
 brew install wget
 brew install yamllint
