@@ -78,6 +78,9 @@ killall Finder
 defaults write com.apple.screencapture "location" -string "~/Downloads" && \
 killall SystemUIServer
 
+# Disable Widgets on desktop
+defaults write com.apple.WindowManager StandardHideWidgets -bool true
+
 # Set Trackpad
 defaults write com.apple.AppleMultitouchTrackpad "Clicking" -int "1"
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadCornerSecondaryClick" -int "2"
