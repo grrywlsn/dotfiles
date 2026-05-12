@@ -12,6 +12,7 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 
 # # Install core tools/CLIs
+brew install brotli
 brew install coreutils
 brew install dive
 brew install dockutil
@@ -24,6 +25,7 @@ brew install go
 brew install jq
 brew install mas
 brew install pipx
+brew install pkg-config
 brew install protonpass/tap/pass-cli
 brew install watch
 brew install wget
