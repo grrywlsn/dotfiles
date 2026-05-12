@@ -53,6 +53,7 @@ brew install --cask visual-studio-code
 brew install --cask vlc
 
 # Install Kubernetes tooling
+brew install colima
 brew install helm
 brew install helm-docs
 brew install k9s
