@@ -16,6 +16,7 @@ brew install coreutils
 brew install dive
 brew install dockutil
 brew install dyff
+brew install fnm
 brew install fonttools
 brew install git
 brew install gitify
