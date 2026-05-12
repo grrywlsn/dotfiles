@@ -55,6 +55,7 @@ brew install --cask vlc
 # Install Kubernetes tooling
 brew install colima
 brew install docker
+brew install docker-compose
 brew install helm
 brew install helm-docs
 brew install k9s
