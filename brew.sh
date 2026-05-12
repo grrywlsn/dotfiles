@@ -20,6 +20,7 @@ brew install dyff
 brew install fnm
 brew install fonttools
 brew install git
+brew install git-lfs
 brew install gitify
 brew install go
 brew install jq
