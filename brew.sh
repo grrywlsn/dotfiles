@@ -19,6 +19,7 @@ brew install dockutil
 brew install dyff
 brew install fnm
 brew install fonttools
+brew install gh
 brew install git
 brew install git-lfs
 brew install gitify
