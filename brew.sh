@@ -24,6 +24,7 @@ brew install git
 brew install git-lfs
 brew install gitify
 brew install go
+brew install common-fate/granted/granted
 brew install jq
 brew install mas
 brew install pipx
