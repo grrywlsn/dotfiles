@@ -37,7 +37,6 @@ brew install yq
 brew install yt-dlp
 
 # casks
-brew install --cask cursor
 brew install --cask discord
 brew install --cask firefox
 brew install --cask handbrake-app
