@@ -41,11 +41,9 @@ brew install yt-dlp
 
 # casks
 brew install --cask firefox
-brew install --cask gimp
 brew install --cask gitify
 brew install --cask handbrake-app
 brew install --cask iterm2
-brew install --cask logseq
 brew install --cask netnewswire
 brew install --cask obs
 brew install --cask pgadmin4
