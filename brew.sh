@@ -12,23 +12,26 @@ brew upgrade
 BREW_PREFIX=$(brew --prefix)
 
 # # Install core tools/CLIs
+brew install act
 brew install brotli
 brew install coreutils
 brew install dive
 brew install dockutil
 brew install dyff
 brew install fnm
+brew install ffmpeg
 brew install fonttools
 brew install gh
 brew install git
-brew install git-lfs
-brew install gitify
+brew install git-filter-repo
 brew install go
-brew install common-fate/granted/granted
+brew install imessage-exporter
 brew install jq
 brew install mas
+brew install node
 brew install pipx
-brew install pkg-config
+brew install postgresql@15
+brew install pre-commit
 brew install protonpass/tap/pass-cli
 brew install watch
 brew install wget
@@ -37,9 +40,8 @@ brew install yq
 brew install yt-dlp
 
 # casks
-brew install --cask deskpad
-brew install --cask discord
 brew install --cask firefox
+brew install --cask gitify
 brew install --cask handbrake-app
 brew install --cask iterm2
 brew install --cask netnewswire
@@ -51,8 +53,10 @@ brew install --cask proton-drive
 brew install --cask proton-mail
 brew install --cask protonvpn
 brew install --cask signal
+brew install --cask ungoogled-chromium
 brew install --cask visual-studio-code
 brew install --cask vlc
+brew install --cask vscodium
 
 # Install Kubernetes tooling
 brew install colima
@@ -69,6 +73,7 @@ brew install stern
 brew install awscli
 brew install opentofu
 brew install scw # Scaleway
+brew install terraform-docs
 brew install terragrunt
 
 # Remove outdated versions from the cellar.
