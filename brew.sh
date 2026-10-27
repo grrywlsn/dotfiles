@@ -13,12 +13,12 @@ BREW_PREFIX=$(brew --prefix)
 
 # # Install core tools/CLIs
 brew install act
-brew install air
 brew install brotli
 brew install coreutils
 brew install dive
 brew install dockutil
 brew install dyff
+brew install fnm
 brew install ffmpeg
 brew install fonttools
 brew install gh
@@ -40,7 +40,6 @@ brew install yq
 brew install yt-dlp
 
 # casks
-brew install --cask cursor
 brew install --cask firefox
 brew install --cask gimp
 brew install --cask gitify
